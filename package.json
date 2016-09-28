@@ -8,5 +8,8 @@
   },
   "keywords": [],
   "author": "Budi Irawan <deerawan@gmail.com> (http://budiirawan.com)",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
 }
