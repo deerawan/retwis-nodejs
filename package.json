@@ -10,6 +10,7 @@
   "author": "Budi Irawan <deerawan@gmail.com> (http://budiirawan.com)",
   "license": "ISC",
   "dependencies": {
+    "ejs": "^2.5.2",
     "express": "^4.14.0"
   }
 }
