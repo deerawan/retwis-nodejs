@@ -10,7 +10,8 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static('public'));
 app.use(session({
-  store: new RedisStore()
+  store: new RedisStore(),
+  secret: 'blindlove'
 }));
 
 app.get('/', function(req, res) {
