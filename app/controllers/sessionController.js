@@ -13,7 +13,11 @@ var SessionController = function() {
   var register = (req, res) => {
     var username = req.body.username;
     var userRepo = new UserRepository(redisClient);
-    userRepo.isUserExist(username);
+    var register = userRepo.register(username);
+    register.subscribe(
+      (user) => res.send('created'),
+      (error) => console.log('error')
+    );
 
     // console.log(username);
     // redisClient.hget('users', username, (err, user) => {
