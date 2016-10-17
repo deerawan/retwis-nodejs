@@ -27,19 +27,7 @@ var UserRepository = function(redisClient) {
     return hget('users', username);
   };
   var isUserExist = function(username) {
-    // redisClient.hget('users', username, (err, user) => {
-    //   console.log(user);
-    // });
-    // // var hget = Rx.Observable.fromCallback(redisClient.hget);
 
-    // var hget = Rx.Observable.bindNodeCallback(redisClient.hget.bind(redisClient));
-    // var source = hget('users', username);
-
-    // var subscription = source.subscribe(
-    //   (user) => console.log('onNext: %s', x),
-    //   (e) => console.log('onError: %s', e),
-    //   ()  => console.log('onCompleted')
-    // );
   };
   var createUser = function() {
 
